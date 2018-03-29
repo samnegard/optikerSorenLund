@@ -61,7 +61,7 @@
                 </v-container>
             </section>
 
-            <section class="light-blue lighten-5 py-5">
+            <section class="light-blue lighten-5 py-5" id="prices">
                 <v-container grid-list-xl class="my-5">
                     <v-layout row wrap justify-center>
                         <v-flex xs12 class="mb-4">
@@ -145,7 +145,7 @@
                 </v-parallax>
             </section>
 
-            <section class="grey lighten-5 py-5">
+            <section class="grey lighten-5 py-5" id="glases">
                 <v-container grid-list-xl class="my-5">
                     <v-layout row wrap justify-center>
                         <v-flex xs12 class="mb-4">
@@ -193,7 +193,7 @@
                             </v-layout>
                         </v-flex>
                         <v-flex xs12 xl10>
-                            <v-container grid-list-xl>
+                            <v-container grid-list-md>
                                 <v-layout row wrap align-center justify-center>
                                     <v-flex xs12 md3>
                                         <v-card class="pa-3" href="https://www.efvaattling.se/sv/artiklar/ovrigt/glasogon/index.html">
@@ -201,13 +201,13 @@
                                         </v-card>
                                     </v-flex>
                                     <v-flex xs12 md3>
-                                        <v-card class="pa-3" href="https://dcompanynordic.com/sv/varumarke/norr">
-                                            <v-card-media src="src/assets/norr.jpg" height="100px" contain></v-card-media>
+                                        <v-card class="pa-3" href="https://www.eoe-glasses.com/">
+                                            <v-card-media src="src/assets/eoe.jpg" height="100px" contain></v-card-media>
                                         </v-card>
                                     </v-flex>
                                     <v-flex xs12 md3>
-                                        <v-card class="pa-3" href="https://www.eoe-glasses.com/">
-                                            <v-card-media src="src/assets/eoe.jpg" height="100px" contain></v-card-media>
+                                        <v-card class="pa-3" href="https://dcompanynordic.com/sv/varumarke/norr">
+                                            <v-card-media src="src/assets/norr.jpg" height="100px" contain></v-card-media>
                                         </v-card>
                                     </v-flex>
                                     <v-flex xs12 md3>
@@ -222,7 +222,7 @@
                 </v-container>
             </section>
 
-            <section class="light-blue lighten-5 py-5">
+            <section class="light-blue lighten-5 py-5" id="lenses">
                 <v-container grid-list-xl class="my-5">
                     <v-layout row wrap justify-center>
                         <v-flex xs12 class="mb-4">
@@ -235,7 +235,7 @@
                             <v-layout row wrap justify-space-between align-center>
                                 <v-flex xs12 md4>
                                     <v-card flat class="transparent">
-                                        <v-card-media src="src/assets/lenses.jpeg" height="300px"></v-card-media>
+                                        <v-card-media src="src/assets/lenses.png" height="300px"></v-card-media>
                                     </v-card>
                                 </v-flex>
                                 <v-flex xs12 md7>
@@ -260,11 +260,30 @@
                             </v-layout>
                         </v-flex>
                         <v-flex xs12 xl10>
-                            <v-card>
-                                <v-card-text>
-                                    Linsleverantörer: Alcon, Bausch & Lomb, Biolens, Consol, Cooper Vision, Hydrolens och Johnson & Johnson?
-                                </v-card-text>
-                            </v-card>
+                            <v-container grid-list-md>
+                                <v-layout row wrap align-center justify-center>
+                                    <v-flex xs12 md3>
+                                        <v-card class="pa-3" href="https://www.efvaattling.se/sv/artiklar/ovrigt/glasogon/index.html">
+                                            <v-card-media src="src/assets/alcon.png" height="100px" contain></v-card-media>
+                                        </v-card>
+                                    </v-flex>
+                                    <v-flex xs12 md3>
+                                        <v-card class="pa-3" href="https://dcompanynordic.com/sv/varumarke/norr">
+                                            <v-card-media src="src/assets/bauschlomb.png" height="100px" contain></v-card-media>
+                                        </v-card>
+                                    </v-flex>
+                                    <v-flex xs12 md3>
+                                        <v-card class="pa-3" href="https://www.eoe-glasses.com/">
+                                            <v-card-media src="src/assets/coopervision.png" height="100px" contain></v-card-media>
+                                        </v-card>
+                                    </v-flex>
+                                    <v-flex xs12 md3>
+                                        <v-card class="pa-3" href="https://www.ray-ban.com/sweden">
+                                            <v-card-media src="src/assets/jnj.jpg" height="100px" contain></v-card-media>
+                                        </v-card>
+                                    </v-flex>
+                                </v-layout>
+                            </v-container>
                         </v-flex>
                     </v-layout>
                 </v-container>
@@ -281,7 +300,7 @@
                 </v-parallax>
             </section>
 
-            <section class="grey lighten-5 py-5">
+            <section class="grey lighten-5 py-5" id="who">
                 <v-container grid-list-xl class="my-5">
                     <v-layout row wrap justify-center>
                         <v-flex xs12 class="mb-4">
@@ -314,7 +333,7 @@
                                     <p>Välkommen in till oss, så tar vi tillsammans reda på hur du egentligen ser ut.</p>
                                 </v-flex>
                                 <v-flex d-flex xs12 sm5 md4 lg3 xl2>
-                                    <v-card d-flex flat>
+                                    <v-card d-flex>
                                         <v-card-media src="src/assets/soren.jpg" height="200px">
                                             <v-container fill-height fluid class="pt-0">
                                                 <v-layout fill-height>
@@ -324,9 +343,6 @@
                                                 </v-layout>
                                             </v-container>
                                         </v-card-media>
-                                        <v-card-text>
-                                            Sören är legitimerad optiker sedan 199X och har kontaktlinsbehörighet sedan XXXX
-                                        </v-card-text>
                                         <v-card-actions>
                                             <v-spacer></v-spacer>
                                             <v-btn icon href="mailto:soren@optikersorenlund.se">
@@ -336,7 +352,7 @@
                                     </v-card>
                                 </v-flex>
                                 <v-flex d-flex xs12 sm5 md4 lg3 xl2>
-                                    <v-card d-flex flat>
+                                    <v-card d-flex>
                                         <v-card-media src="src/assets/lena.jpg" height="200px">
                                             <v-container fill-height fluid class="pt-0">
                                                 <v-layout fill-height>
@@ -346,9 +362,6 @@
                                                 </v-layout>
                                             </v-container>
                                         </v-card-media>
-                                        <v-card-text>
-                                            Lena är full av kunskaper för att hjälpa dig med det du behöver
-                                        </v-card-text>
                                         <v-card-actions>
                                             <v-spacer></v-spacer>
                                             <v-btn icon href="mailto:lena@optikersorenlund.se">
