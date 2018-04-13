@@ -240,7 +240,7 @@
                         <v-flex xs12 md4 lg6 xl8>
                             <v-card flat color="transparent">
                                 <v-card-text class="px-0 pt-0">
-                                    Vi finns på Arklimästaregatan 39 i Karlskrona, där ”bakom Wachtmeister”. Parkera i P-huset i Wachtmeister och ta med biljetten in så ersätter vi för en timmes parkering.</p>
+                                    Vi finns på Arklimästaregatan 39 i Karlskrona, där ”bakom Wachtmeister”. Parkera i P-huset i Wachtmeister och ta med biljetten in så ersätter vi för en timmes parkering.
                                 </v-card-text>
                                 <v-card-text class="px-0 pb-0">
                                     Välkommen in till oss, så tar vi tillsammans reda på hur du egentligen ser ut.
