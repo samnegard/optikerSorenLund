@@ -11,8 +11,8 @@
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASxbNt-HPzd2J9EG111JL9KZek7oLX5ok"></script>
         <script type="text/javascript">
             function initMap() {
-                var center = {lat: 56.161239, lng: 15.582054};
-                var map = new google.maps.Map(document.getElementById('map'), {
+                let center = {lat: 56.161239, lng: 15.582054};
+                let map = new google.maps.Map(document.getElementById('map'), {
                     zoom: 16,
                     center: center,
                     disableDefaultUI: true,
@@ -234,7 +234,7 @@
                         }
                     ]
                 });
-                var marker = new google.maps.Marker({
+                let marker = new google.maps.Marker({
                     position: center,
                     map: map
                 });
