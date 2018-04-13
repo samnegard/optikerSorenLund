@@ -1,6 +1,6 @@
 <template>
     <section style="position: relative;">
-        <v-parallax src="src/assets/background.jpg" height="700">
+        <v-parallax src="src/assets/background.jpg" height="600">
             <v-layout column align-center justify-center class="white--text">
                 <img src="src/assets/logo-full.svg" alt="Optiker Sören Lund" class="mb-2 logo">
             </v-layout>
@@ -50,9 +50,8 @@
     export default {
         data () {
             return {
+                dialog: false
             }
         }
     }
 </script>
-
-<style></style>

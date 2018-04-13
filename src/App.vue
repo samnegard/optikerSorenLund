@@ -19,7 +19,7 @@
                                 <v-card-title primary-title class="layout justify-center">
                                     <div class="headline">Omtanke</div>
                                 </v-card-title>
-                                <v-card-text class="px-0">
+                                <v-card-text class="px-0 text-xs-center text-sm-left">
                                     Hos oss får du personlig service och omtanke!
                                     I en ombonad och unik miljö gör vi en noggrann synundersökning inkl tryckmätning,
                                     därefter får du hjälp att i lugn och ro välja bland våra handplockade bågar från
@@ -32,7 +32,7 @@
                                 <v-card-title primary-title class="layout justify-center">
                                     <div class="headline">Kvalitet</div>
                                 </v-card-title>
-                                <v-card-text class="px-0">
+                                <v-card-text class="px-0 text-xs-center text-sm-left">
                                     Då vi inte tummar på kvalitén använder vi endast högkvalitativa glas från Zeiss.
                                     Givetvis kan vi erbjuda den senaste teknologin inom progressiva glasögon.
                                     Plus kanske något om linser.
@@ -44,7 +44,7 @@
                                 <v-card-title primary-title class="layout justify-center">
                                     <div class="headline">Service</div>
                                 </v-card-title>
-                                <v-card-text class="px-0">
+                                <v-card-text class="px-0 text-xs-center text-sm-left">
                                    Vi finns i centrum med ett brett utbud av de senaste kollektionerna och välkända varumärken toppat med personlig och professionell service.
                                     Från allra första stund. Hos oss hittar du det senaste modet för alla smaker och personligheter. Välkommen.
                                 </v-card-text>
@@ -118,7 +118,7 @@
                 </v-flex>
             </osl-page>
 
-            <osl-quote>Alltid trevliga och tillmötesgående</osl-quote>
+            <osl-quote src="src/assets/section.jpg">Alltid trevliga och tillmötesgående</osl-quote>
 
             <osl-page id="glases">
                 <osl-page-header>Glasögon</osl-page-header>
@@ -163,26 +163,10 @@
                 <v-flex xs12 xl10>
                     <v-container grid-list-md>
                         <v-layout row wrap align-center justify-center>
-                            <v-flex xs12 sm6 md3>
-                                <v-card class="pa-3" href="https://www.efvaattling.se/sv/artiklar/ovrigt/glasogon/index.html">
-                                    <v-card-media src="src/assets/attling.png" height="100px" contain></v-card-media>
-                                </v-card>
-                            </v-flex>
-                            <v-flex xs12 sm6 md3>
-                                <v-card class="pa-3" href="https://www.eoe-glasses.com/">
-                                    <v-card-media src="src/assets/eoe.jpg" height="100px" contain></v-card-media>
-                                </v-card>
-                            </v-flex>
-                            <v-flex xs12 sm6 md3>
-                                <v-card class="pa-3" href="https://dcompanynordic.com/sv/varumarke/norr">
-                                    <v-card-media src="src/assets/norr.jpg" height="100px" contain></v-card-media>
-                                </v-card>
-                            </v-flex>
-                            <v-flex xs12 sm6 md3>
-                                <v-card class="pa-3" href="https://www.ray-ban.com/sweden">
-                                    <v-card-media src="src/assets/rayban.jpg" height="100px" contain></v-card-media>
-                                </v-card>
-                            </v-flex>
+                            <osl-product-card href="https://www.efvaattling.se/sv/artiklar/ovrigt/glasogon/index.html" src="src/assets/attling.png" />
+                            <osl-product-card href="https://dcompanynordic.com/sv/varumarke/norr" src="src/assets/eoe.jpg" />
+                            <osl-product-card href="https://www.eoe-glasses.com/" src="src/assets/norr.jpg" />
+                            <osl-product-card href="https://www.ray-ban.com/sweden" src="src/assets/rayban.jpg" />
                         </v-layout>
                     </v-container>
                 </v-flex>
@@ -221,33 +205,16 @@
                 <v-flex xs12 xl10>
                     <v-container grid-list-md>
                         <v-layout row wrap align-center justify-center>
-                            <v-flex xs12 sm6 md3>
-                                <v-card class="pa-3" href="https://www.efvaattling.se/sv/artiklar/ovrigt/glasogon/index.html">
-                                    <v-card-media src="src/assets/alcon.png" height="100px" contain></v-card-media>
-                                </v-card>
-                            </v-flex>
-                            <v-flex xs12 sm6 md3>
-                                <v-card class="pa-3" href="https://dcompanynordic.com/sv/varumarke/norr">
-                                    <v-card-media src="src/assets/bauschlomb.png" height="100px" contain></v-card-media>
-                                </v-card>
-                            </v-flex>
-                            <v-flex xs12 sm6 md3>
-                                <v-card class="pa-3" href="https://www.eoe-glasses.com/">
-                                    <v-card-media src="src/assets/coopervision.png" height="100px" contain></v-card-media>
-                                </v-card>
-                            </v-flex>
-                            <v-flex xs12 sm6 md3>
-                                <v-card class="pa-3" href="https://www.ray-ban.com/sweden">
-                                    <v-card-media src="src/assets/jnj.jpg" height="100px" contain></v-card-media>
-                                </v-card>
-                            </v-flex>
+                            <osl-product-card href="https://www.efvaattling.se/sv/artiklar/ovrigt/glasogon/index.html" src="src/assets/alcon.png" />
+                            <osl-product-card href="https://dcompanynordic.com/sv/varumarke/norr" src="src/assets/bauschlomb.png" />
+                            <osl-product-card href="https://www.eoe-glasses.com/" src="src/assets/coopervision.png" />
+                            <osl-product-card href="https://www.eoe-glasses.com/" src="src/assets/jnj.jpg" />
                         </v-layout>
                     </v-container>
                 </v-flex>
             </osl-page>
 
-
-            <osl-quote>Men hjälp av fantastisk personal fick jag mina glasögon i min smak</osl-quote>
+            <osl-quote src="src/assets/section.jpg">Men hjälp av fantastisk personal fick jag mina glasögon i min smak</osl-quote>
 
             <osl-page id="who">
                 <osl-page-header>Detta är vi</osl-page-header>
@@ -334,6 +301,7 @@
     import OslHeader from './components/osl-header.vue'
     import OslPage from './components/osl-page.vue'
     import OslPageHeader from './components/osl-page-header.vue'
+    import OslProductCard from './components/osl-product-card.vue'
     import OslQuote from './components/osl-quote.vue'
 
     export default {
@@ -342,6 +310,7 @@
             OslHeader,
             OslPage,
             OslPageHeader,
+            OslProductCard,
             OslQuote
         },
         data () {
@@ -360,7 +329,4 @@
         width: 100vw
         height: 400px
         background-color: grey
-    .logo
-        max-width: 100%
-        height: auto
 </style>

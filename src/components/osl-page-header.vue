@@ -1,20 +1,26 @@
 <template>
     <v-flex xs12 class="mb-4">
         <div class="text-xs-center">
-            <h2 class="display-2 teal--text text--darken-1">
+            <h2 :class="headerColorClass" class="display-2 text--darken-1">
                 <slot></slot>
             </h2>
         </div>
-        <v-divider class="mt-4 teal darken-1"></v-divider>
+        <v-divider :class="color" class="mt-4 darken-1"></v-divider>
     </v-flex>
 </template>
 <script>
     export default {
-        data () {
-            return {
+        props: {
+            'color': {
+                type: String,
+                required: false,
+                default: 'teal'
+            }
+        },
+        computed: {
+            headerColorClass () {
+                return this.color + '--text'
             }
         }
     }
 </script>
-
-<style></style>
