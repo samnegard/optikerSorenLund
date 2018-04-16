@@ -2,60 +2,51 @@
     <v-app light>
         <v-content>
             <osl-header />
-            <section class="grey lighten-5 pb-5">
-                <v-container grid-list-xl>
-                    <v-layout row wrap>
-                        <v-flex xs12 class="my-4">
-                            <div class="text-xs-center blue-grey--text">
-                                <h2 class="display-1">Vi hjälper dig att se bättre ut</h2>
-                                <div class="headline mt-2">
-                                    Välkommen in!
-                                </div>
-                            </div>
-                            <v-divider class="mt-4 blue-grey"></v-divider>
-                        </v-flex>
-                        <v-flex xs12 md4>
-                            <v-card class="elevation-0 transparent">
-                                <v-card-title primary-title class="layout justify-center">
-                                    <div class="headline">Omtanke</div>
-                                </v-card-title>
-                                <v-card-text class="px-0 text-xs-center text-sm-left">
-                                    Hos oss får du personlig service och omtanke!
-                                    I en ombonad och unik miljö gör vi en noggrann synundersökning inkl tryckmätning,
-                                    därefter får du hjälp att i lugn och ro välja bland våra handplockade bågar från
-                                    t ex EoE, Efva Attling, Norr, Ray-Ban m fl.
-                                </v-card-text>
-                            </v-card>
-                        </v-flex>
-                        <v-flex xs12 md4>
-                            <v-card class="elevation-0 transparent">
-                                <v-card-title primary-title class="layout justify-center">
-                                    <div class="headline">Kvalitet</div>
-                                </v-card-title>
-                                <v-card-text class="px-0 text-xs-center text-sm-left">
-                                    Då vi inte tummar på kvalitén använder vi endast högkvalitativa glas från Zeiss.
-                                    Givetvis kan vi erbjuda den senaste teknologin inom progressiva glasögon.
-                                    Plus kanske något om linser.
-                                </v-card-text>
-                            </v-card>
-                        </v-flex>
-                        <v-flex xs12 md4>
-                            <v-card class="elevation-0 transparent">
-                                <v-card-title primary-title class="layout justify-center">
-                                    <div class="headline">Service</div>
-                                </v-card-title>
-                                <v-card-text class="px-0 text-xs-center text-sm-left">
-                                   Vi finns i centrum med ett brett utbud av de senaste kollektionerna och välkända varumärken toppat med personlig och professionell service.
-                                    Från allra första stund. Hos oss hittar du det senaste modet för alla smaker och personligheter. Välkommen.
-                                </v-card-text>
-                            </v-card>
-                        </v-flex>
-                    </v-layout>
-                </v-container>
-            </section>
-
-            <osl-page id="prices">
-                <osl-page-header>Lite om våra priser</osl-page-header>
+            <osl-page id="prices" :align-center="false" :justify-center="false">
+                <osl-page-header title="Vi hjälper dig att se bättre ut">
+                    <div class="headline mt-2 blue-grey--text">
+                        Välkommen in!
+                    </div>
+                </osl-page-header>
+                <v-flex xs12 md4>
+                    <v-card class="elevation-0 transparent">
+                        <v-card-title primary-title class="layout justify-center">
+                            <div class="headline">Omtanke</div>
+                        </v-card-title>
+                        <v-card-text class="px-0 text-xs-center text-sm-left">
+                            Hos oss får du personlig service och omtanke!
+                            I en ombonad och unik miljö gör vi en noggrann synundersökning inkl tryckmätning,
+                            därefter får du hjälp att i lugn och ro välja bland våra handplockade bågar från
+                            t ex EoE, Efva Attling, Norr, Ray-Ban m fl.
+                        </v-card-text>
+                    </v-card>
+                </v-flex>
+                <v-flex xs12 md4>
+                    <v-card class="elevation-0 transparent">
+                        <v-card-title primary-title class="layout justify-center">
+                            <div class="headline">Kvalitet</div>
+                        </v-card-title>
+                        <v-card-text class="px-0 text-xs-center text-sm-left">
+                            Då vi inte tummar på kvalitén använder vi endast högkvalitativa glas från Zeiss.
+                            Givetvis kan vi erbjuda den senaste teknologin inom progressiva glasögon.
+                            Plus kanske något om linser.
+                        </v-card-text>
+                    </v-card>
+                </v-flex>
+                <v-flex xs12 md4>
+                    <v-card class="elevation-0 transparent">
+                        <v-card-title primary-title class="layout justify-center">
+                            <div class="headline">Service</div>
+                        </v-card-title>
+                        <v-card-text class="px-0 text-xs-center text-sm-left">
+                           Vi finns i centrum med ett brett utbud av de senaste kollektionerna och välkända varumärken toppat med personlig och professionell service.
+                            Från allra första stund. Hos oss hittar du det senaste modet för alla smaker och personligheter. Välkommen.
+                        </v-card-text>
+                    </v-card>
+                </v-flex>
+            </osl-page>
+            <osl-page id="prices" :align-center="false">
+                <osl-page-header title="Lite om våra priser" />
                 <v-flex d-flex xs12 md4 xl3>
                     <v-card flat>
                         <v-card-media src="src/assets/glasses.jpeg" height="200px"></v-card-media>
@@ -121,7 +112,7 @@
             <osl-quote src="src/assets/section.jpg">Alltid trevliga och tillmötesgående</osl-quote>
 
             <osl-page id="glases">
-                <osl-page-header>Glasögon</osl-page-header>
+                <osl-page-header title="Glasögon" />
                 <v-flex xs12 xl10>
                     <v-layout row wrap justify-space-between aling-center>
                         <v-flex xs12 xl10>
@@ -173,7 +164,7 @@
             </osl-page>
 
             <osl-page id="lenses">
-                <osl-page-header>Kontaktlinser</osl-page-header>
+                <osl-page-header title="Kontaktlinser" />
                 <v-flex xs12 xl10>
                     <v-layout row wrap justify-space-between align-center>
                         <v-flex xs12 md4>
@@ -217,7 +208,7 @@
             <osl-quote src="src/assets/section.jpg">Men hjälp av fantastisk personal fick jag mina glasögon i min smak</osl-quote>
 
             <osl-page id="who">
-                <osl-page-header>Detta är vi</osl-page-header>
+                <osl-page-header title="Detta är vi" />
                 <v-flex xs12 lg10>
                     <v-layout row wrap justify-center>
                         <v-flex xs12 md5>
@@ -317,16 +308,6 @@
             return {
                 dialog: false
             }
-        },
-        mounted () {
-            initMap()
         }
     }
 </script>
-
-<style lang="stylus">
-    #map
-        width: 100vw
-        height: 400px
-        background-color: grey
-</style>

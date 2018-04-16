@@ -1,7 +1,7 @@
 <template>
-    <section :class="color" class="lighten-5 py-5" :id="id" style="min-height: 100vh">
+    <section :class="color" class="lighten-5 py-5" :id="id">
         <v-container grid-list-xl class="my-5">
-            <v-layout row wrap justify-center align-center>
+            <v-layout row wrap :justify-center="justifyCenter" :align-center="alignCenter">
                 <slot></slot>
             </v-layout>
         </v-container>
@@ -18,6 +18,16 @@
             'id': {
                 type: String,
                 required: true
+            },
+            'justify-center': {
+                type: Boolean,
+                required: false,
+                default: true
+            },
+            'align-center': {
+                type: Boolean,
+                required: false,
+                default: true
             }
         },
         data () {
